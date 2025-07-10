@@ -13,9 +13,7 @@ privacyUI <- function(id) {
         
         shiny::markdown(
           "
-          RMAVIS does not collect any data at present, however please
-          refer to the UKCEH ['Privacy notice'](https://www.ceh.ac.uk/privacy-notice)
-          web page for UKCEH privacy policy.
+          TBD privacy statement
           
           "
           )
