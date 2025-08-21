@@ -10,7 +10,7 @@ inputMethod_options <- c("Manual" = "manual",
 
 # Example data options ----------------------------------------------------
 example_data_options <- c("None" = "none", 
-                          "Parsonage Down (CG)" = "Parsonage Down",
+                          "MN Example Releve" = "MN Example Releve",
                           "Whitwell Common (M)" = "Whitwell Common",
                           "Leith Hill Place Wood (W)" = "Leith Hill Place Wood",
                           "Newborough Warren (SD)" = "Newborough Warren")

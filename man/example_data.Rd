@@ -7,10 +7,19 @@
 \format{
 A list with 4 entries:
 \describe{
-\item{Parsonage Down}{}
+\item{MN Example Releve}{}
 \item{Leith Hill Place Wood}{}
 \item{Whitwell Common}{}
 \item{Newborough Warren}{}
+\item{relnumb}{The ID number in the MN DNR database.}
+\item{physcode}{Physiognomic code that describes life form, one of: A (aquatic), B (broadleaf evergreen), C (climbers), D (broadleaf deciduous), E (needleleaf evergreen), F (floating-leaved aquatic), G (graminoid), H (forb), K (stem succulent), L (lichen), Li (lichen), M (moss or liverwort), S (submerged aquatic), X (epiphyte).}
+\item{minht}{Minimum height stratum for the physiognomic group, integers between 1 and 8}
+\item{maxnht}{Maximum height stratum for the physiognomic group, integers between 1 and 8}
+\item{pcov}{Collective cover of the physiognomic group for the stratum defined by minht and maxht, one of: C (continuous, 75-100\%), I (interrupted, 50-75\%), P (patchy, 25-50\%), R (rare, 5-25\%), B (barely present, 1-5\%), or A (almost absent, <1\%).}
+\item{taxon_new}{Scientific name of plant(s). "New" indicates the newest name available in MNTaxa.}
+\item{relid}{Reliability of plant identification, integer ranging from 0 (confident to level of variety or subspecies) to 7 (unknown species).}
+\item{scov}{Collective cover of the taxon for the stratum defined by minht and maxht, one of: 5 (75-100\%), 4 (50-75\%), 3 (25-50\%), 2 (5-25\%), 1 (<5\%, many individuals), + (<5\%, few individuals), r (<5\%, one individual).}
+\item{outside_of_plot}{Indicator for whether taxon was located only outside of the releve plot, one of: t (true), f (false).}
 }
 }
 \usage{

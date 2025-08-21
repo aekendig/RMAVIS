@@ -78,7 +78,7 @@ deSidebarUI <- function(id){
               shiny::markdown(
                 "
                 Four example datasets are currently provided:
-                1. 'Parsonage Down'.
+                1. 'MN Example Releve'.
                 2. 'Whitwell Common'.
                 3. 'Leith Hill Place Wood'.
                 4. 'Newborough Warren'.
