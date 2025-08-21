@@ -8,10 +8,10 @@ similarityJaccard(
   samp_df,
   comp_df,
   samp_species_col,
-  comp_species_col,
+  comp_species_col = "nvc_taxon_name",
   samp_group_name = "ID",
-  comp_group_name = "Pid3",
-  comp_groupID_name = "NVC",
+  comp_group_name = "psq_id",
+  comp_groupID_name = "nvc_code",
   remove_zero_matches = TRUE,
   average_comp = TRUE
 )
@@ -48,12 +48,12 @@ measure of similarity.
 RMAVIS::similarityJaccard(samp_df = RMAVIS::example_data[["Parsonage Down"]], 
                           comp_df = RMAVIS::subset_nvcData(nvc_data = RMAVIS::nvc_pquads, 
                                                            habitatRestriction = c("CG"), 
-                                                           col_name = "Pid3"),
+                                                           col_name = "psq_id"),
                           samp_species_col = "Species", 
-                          comp_species_col = "species",
+                          comp_species_col = "nvc_taxon_name",
                           samp_group_name = "Quadrat", 
-                          comp_group_name = "Pid3",
-                          comp_groupID_name = "NVC", 
+                          comp_group_name = "psq_id",
+                          comp_groupID_name = "nvc_code", 
                           remove_zero_matches = TRUE, 
                           average_comp = TRUE)
 }
